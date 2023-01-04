@@ -45,8 +45,6 @@ class Solution{
         for(int i = 1; i< N-K+1; i++){
             currSum = currSum + Arr.get(i+K-1);
             currSum = currSum - Arr.get(i-1);
-            // System.out.println("Value of CurrSum: " + currSum);
-            // System.out.println("Max sum so far: " + maxSumSoFar);
             maxSumSoFar = Math.max(maxSumSoFar, currSum);
             
         }
